@@ -1,0 +1,27 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+
+@font-face {
+    font-family: 'Chivo';
+    src: local('Chivo'), url('../fonts/Chivo/Chivo-Regular.ttf') format('ttf');
+}
+
+@tailwind utilities;
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f5f3ff;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #ddd6fe;
+	border-radius: 20px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
