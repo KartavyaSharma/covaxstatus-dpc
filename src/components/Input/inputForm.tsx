@@ -9,14 +9,15 @@ export default function InputForm(): JSX.Element {
 
     const fetcher = (url: string) => axios.get(url).then((res) => res.data)
 
-    const { data, error } = useSwr(`${defaultParams.baseUrl}${defaultParams.metadataBase}states`, fetcher)
-
-    if(error) return <> Oops </>
-    console.log(data);
+    const { data, error } = useSwr(
+        `${defaultParams.baseUrl}${defaultParams.metadataBase}states`, 
+        fetcher,
+        { refreshInterval: 10000 }
+    )
 
     return (
         <>
-            Hullo
+
         </>
     )
 }
