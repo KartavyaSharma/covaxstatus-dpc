@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Layout from '../components/Layout/layout'
+import InputForm from '../components/Input/inputForm'
 
 export default function Home(): JSX.Element {
     return (
@@ -18,6 +19,7 @@ export default function Home(): JSX.Element {
                     <div className='mt-10 lg:mt-15 2xl:mt-20 font-heads text-black text-4xl font-bold w-full lg:w-2/3'>
                         Get the latest <span className='text-green-400'>appointment</span> data for <span className='text-violet-400'>vaccination</span> centers near you.
                     </div>
+                    <InputForm />
                 </>
             </Layout>
         </div>
